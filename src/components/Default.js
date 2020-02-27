@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 
-function Search() {
+function Default() {
 
   return (
     <div className="App">
-      <h1 className="App-header">Search</h1>
+      <h1 className="App-header">Home</h1>
     </div>
   );
 }
 
-export default Search;
+export default Default;

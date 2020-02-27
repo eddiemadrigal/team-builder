@@ -1,5 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route, Link, useHistory} from "react-router-dom";
+import Default from "./Default";
 import MemberData from "./MemberData";
 import Search from "./Search";
 import "./Home.css";
@@ -28,6 +29,9 @@ function Home() {
                     </Route>
                     <Route path="/search">
                         <Search />
+                    </Route>
+                    <Route path="/">
+                        <Default />
                     </Route>
                 </Switch>
             </div>
