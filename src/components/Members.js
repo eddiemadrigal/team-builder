@@ -6,9 +6,9 @@ const Members = props => {
     return (
         <div className="member-list">
             { props.members.map( member => (
-                <ol key = { member.id }>
-                    <li>{member.name} ({member.role}): {member.email}</li>
-                </ol>
+                <ul key = { member.id }>
+                    <li>{member.name} ({member.role}): <a href={'mailto:' + member.email}>{member.email}</a></li>
+                </ul>
             ))}
         </div>
     );
