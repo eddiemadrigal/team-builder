@@ -1,15 +1,14 @@
 import React from "react";
+import "./Members.css";
 
 const Members = props => {
     console.log(props);
     return (
-        <div>
+        <div className="member-list">
             { props.members.map( member => (
-                <div key = { member.id }>
-                    <h2>{member.name}</h2>
-                    <h3>{member.email}</h3>
-                    <h3>{member.role}</h3>
-                </div>
+                <ol key = { member.id }>
+                    <li>{member.name} ({member.role}): {member.email}</li>
+                </ol>
             ))}
         </div>
     );
