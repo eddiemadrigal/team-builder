@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Switch, Route, Link, useHistory} from "react-ro
 import Default from "./Default";
 import MemberData from "./MemberData";
 import Search from "./Search";
+import SearchAPI from "./SearchAPI";
 import "./Home.css";
 
 function Home() {
@@ -21,11 +22,15 @@ function Home() {
                         <Link to="/" className="link">Home</Link>
                         <Link to="/memberdata/" className="link">Member List</Link>
                         <Link to="/search" className="link">Search</Link>
+                        <Link to="/searchAPI" className="link">Search API</Link>
                     </div>
                 </nav>
                 <Switch>
                     <Route path="/memberdata">
                         <MemberData />
+                    </Route>
+                    <Route path="/searchAPI">
+                        <SearchAPI />
                     </Route>
                     <Route path="/search">
                         <Search />
